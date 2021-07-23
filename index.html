@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ePanda | An Eccommerce Website</title>
 
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
     <!-- THEME STYLES -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,8 +18,264 @@
 <body>
 
     <header class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-6 col-sm-6 col-lg-3">
+                <div class="logo">
+                    <a href="/"><img src="images/logo.png" class="img-fluid" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-4 d-none d-md-block">
+                <div class="search-box">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button class="btn btn-outline-secondary" type="button"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-5">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                        <!-- HAMBURGER -->
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                            data-bs-target="#nav-menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
+                        <div class=" collapse navbar-collapse" id="nav-menu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Product</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
     </header>
+    <!-- SLIDER -->
+    <section class="slider mt-5">
+        <div class="container">
+            <div id="carouselExampleSlidesOnly" class="carousel slide bg-primary
+            " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div class="row align-items-center justify-content-center p-5">
+                            <div class="col-12 col-md-7 order-2 order-md-0">
+                                <h1>Mi LED TV 4A PRO 32</h1>
+                                <p class="lead">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia
+                                    consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.
+                                </p>
+                                <p class="h1">$1289</p>
+                                <a href="#" class="btn btn-primary">Buy Now <i class="bi bi-arrow-right"></i></a>
+
+                            </div>
+                            <div class="col-12 col-md-5 order-1 order-md-0">
+                                <img src="images/banner-images/headphone.png" class="d-block w-75 img-fluid" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center justify-content-center p-5">
+                            <div class="col-12 col-md-7 order-2 order-md-0">
+                                <h1>Mi LED TV 4A PRO 32</h1>
+                                <p class="lead">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia
+                                    consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.
+                                </p>
+                                <p class="h1">$1289</p>
+                                <a href="#" class="btn btn-primary">Buy Now <i class="bi bi-arrow-right"></i></a>
+
+                            </div>
+                            <div class="col-12 col-md-5 order-1 order-md-0">
+                                <img src="images/banner-images/tv.png" class="d-block w-75 img-fluid" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center justify-content-center p-5">
+                            <div class="col-12 col-md-7 order-2 order-md-0">
+                                <h1>Mi LED TV 4A PRO 32</h1>
+                                <p class="lead">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia
+                                    consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.
+                                </p>
+                                <p class="h1">$1289</p>
+                                <a href="#" class="btn btn-primary">Buy Now <i class="bi bi-arrow-right"></i></a>
+
+                            </div>
+                            <div class="col-12 col-md-5 order-1 order-md-0">
+                                <img src="images/banner-images/xbox.png" class="d-block w-75 img-fluid" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="mt-5">
+        <div class="container">
+            <h3>Categories</h3>
+            <div class="row mt-2 gx-3 gy-3 gy-md-0 overflow-hidden">
+                <div class="col-12 col-md-4">
+                    <div
+                        class="single-category d-flex align-items-center justify-content-between bg-primary p-3 rounded">
+                        <h3 class="cat-name">Watch</h3>
+                        <img src="images/categories/watch.png" class="img-fluid w-25" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div
+                        class="single-category d-flex align-items-center justify-content-between bg-danger bg-gradient p-3 rounded">
+                        <h3 class="cat-name">Bag</h3>
+                        <img src="images/categories/bag.png" class="img-fluid w-25" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div
+                        class="single-category d-flex align-items-center justify-content-between bg-primary p-3 rounded">
+                        <h3 class="cat-name">Shoes</h3>
+                        <img src="images/categories/shoes.png" class="img-fluid w-25" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="bg-light mt-5 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="row mx-auto gy-4">
+                    <div class="col-12">
+                        <div class="top d-flex justify-content-between align-items-center">
+                            <div class="section-title mb-3">
+                                <h2>Shoes</h2>
+                            </div>
+                            <div class="all-products">
+                                <a href="#" target="_blank" class="text-warning">See All</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="single-product text-center bg-white rounded py-3">
+                            <img src="images/shoes/shoe-1.png" class="img-fluid w-50" alt="">
+                            <h4>Reebok Dart Men’s Shoes</h4>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, iste
+                                quis ipsa nulla consequuntur repudiandae!</p>
+                            <p class="price h4">$1289</p>
+                            <a href="#" class="btn btn-dark text-light">Buy Now <span><i
+                                        class="bi bi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="single-product text-center bg-white rounded py-3">
+                            <img src="images/shoes/shoe-1.png" class="img-fluid w-50" alt="">
+                            <h4>Reebok Dart Men’s Shoes</h4>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, iste
+                                quis ipsa nulla consequuntur repudiandae!</p>
+                            <p class="price h4">$1289</p>
+                            <a href="#" class="btn btn-dark text-light">Buy Now <span><i
+                                        class="bi bi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="single-product text-center bg-white rounded py-3">
+                            <img src="images/shoes/shoe-1.png" class="img-fluid w-50" alt="">
+                            <h4>Reebok Dart Men’s Shoes</h4>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, iste
+                                quis ipsa nulla consequuntur repudiandae!</p>
+                            <p class="price h4">$1289</p>
+                            <a href="#" class="btn btn-dark text-light">Buy Now <span><i
+                                        class="bi bi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mx-auto gy-4">
+                    <div class="col-12 mt-5">
+                        <div class="top d-flex justify-content-between align-items-center">
+                            <div class="section-title">
+                                <h2>Backpack</h2>
+                            </div>
+                            <div class="all-products">
+                                <a href="#" target="_blank" class="link text-warning">See All</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="single-product text-center bg-white rounded py-3">
+                            <img src="images/bags/bag-1.png" class="img-fluid w-50" alt="">
+                            <h4>Reebok Dart Men’s Shoes</h4>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, iste
+                                quis ipsa nulla consequuntur repudiandae!</p>
+                            <p class="price h4">$1289</p>
+                            <a href="#" class="btn btn-dark text-light">Buy Now <span><i
+                                        class="bi bi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="single-product text-center bg-white rounded py-3">
+                            <img src="images/bags/bag-2.png" class="img-fluid w-50" alt="">
+                            <h4>Reebok Dart Men’s Shoes</h4>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, iste
+                                quis ipsa nulla consequuntur repudiandae!</p>
+                            <p class="price h4">$1289</p>
+                            <a href="#" class="btn btn-dark text-light">Buy Now <span><i
+                                        class="bi bi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="single-product text-center bg-white rounded py-3">
+                            <img src="images/bags/bag-3.png" class="img-fluid w-50" alt="">
+                            <h4>Reebok Dart Men’s Shoes</h4>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, iste
+                                quis ipsa nulla consequuntur repudiandae!</p>
+                            <p class="price h4">$1289</p>
+                            <a href="#" class="btn btn-dark text-light">Buy Now <span><i
+                                        class="bi bi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="my-5">
+        <div class="container">
+            <div class="row text-center align-items-center">
+                <div class="col-12">
+                    <div class="bg-secondary p-5 rounded">
+                        <h3>Let's stay in touch</h3>
+                        <p>Get updates on sales specials and more</p>
+                        <div class="input-group w-50 mx-auto">
+                            <input type="text" class="form-control">
+                            <button type="button" class="btn btn-dark btn-lg">SEND</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- THEME SCRIPTS -->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
